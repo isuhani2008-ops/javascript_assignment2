@@ -37,11 +37,11 @@ Add your API key in script.js
 
 Open index.html in browser (or use Live Server)
 
-##⚠️ Note
+## ⚠️ Note
 
 Enter city names only (like Delhi, Mumbai)
 
 API key may take some time to activate
 
-##👨‍💻 Author
+## 👨‍💻 Author
 suhani
