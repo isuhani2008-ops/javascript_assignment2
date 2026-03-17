@@ -99,13 +99,19 @@ showHistory();
 function setBackground(weather) {
     const body = document.body;
 
-    if (weather.includes("Rain")) {
-        body.style.backgroundImage = "url('rain.jpg')";
+    if (weather.includes("Cloud")) {
+        body.style.background = "linear-gradient(135deg, #757F9A, #D7DDE8)";
+    } 
+    else if (weather.includes("Rain")) {
+        body.style.background = "linear-gradient(135deg, #2c3e50, #4ca1af)";
     } 
     else if (weather.includes("Clear")) {
-        body.style.backgroundImage = "url('sunny.jpg')";
+        body.style.background = "linear-gradient(135deg, #56ab2f, #a8e063)";
     } 
-    else if (weather.includes("Cloud")) {
-        body.style.backgroundImage = "url('cloudy.jpg')";
+    else if (weather.includes("Snow")) {
+        body.style.background = "linear-gradient(135deg, #e6dada, #274046)";
     } 
+    else {
+        body.style.background = "linear-gradient(135deg, #85b79a, #3a915e)";
+    }
 }
