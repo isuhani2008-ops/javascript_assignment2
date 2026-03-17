@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Async Weather Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+    <h1>🌥️ Weather Tracker</h1>
+
+    <div class="parent-card">
+
+        <!-- SEARCH -->
+        <div class="card glass">
+            <h3>🔍 Search City</h3>
+            <div class="input-group">
+                <input id="cityInput" placeholder="Enter city (Delhi, London...)">
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <br>
+
+            <h3>📜 History</h3>
+            <div class="history" id="history"></div>
+
+            <button id="clearHistory" class="danger">Clear</button>
+        </div>
+
+        <!-- WEATHER -->
+        <div class="card glass">
+            <h3>🌦 Weather Info</h3>
+            <div id="weather" class="weather-box">
+                <p class="empty">Search a city to see weather 🌍</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
